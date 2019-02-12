@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#121212"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/delete"
+        android:src="@drawable/delete"
+        android:scaleType="fitStart"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="130dp" />
+
+    <View
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"/>
+
+    <LinearLayout
+        android:padding="60dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <TextView
+            android:textColor="#fff"
+            android:textSize="34sp"
+            android:text="正在搜索电台，请稍后..."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_marginTop="30dp"
+            android:max="100"
+            android:progress="0"
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/cancel"
+        android:textColor="#fff"
+        android:textSize="34sp"
+        android:text="取消"
+        android:padding="20dp"
+        android:gravity="center"
+        android:background="#555555"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
